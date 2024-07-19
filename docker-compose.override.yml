@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  webcoffeeservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development 
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5000:5000"
+    volumes:
+      - /docker/test_disk_500mb/:/var/test_disk_folder/
+      - /docker/ttt/:/var/ttt/
+     
+  coffeemachineservice:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5004
+    ports:
+      - "5004:5004"
+
+  coffeemachineservice-saeco:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5006
+    ports:
+      - "5006:5006"
+
+  coffeemachineservice-delonghi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5008
+    ports:
+      - "5008:5008"
+
+
+
+
+

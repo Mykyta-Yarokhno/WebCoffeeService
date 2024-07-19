@@ -1,0 +1,24 @@
+{
+  "CoffeeMachineConfig": {
+    "Machines": [
+      {
+        "MachineIp": "coffeemachineservice",
+        "Port": 5004,
+        "MachineName": "Saeco-test",
+        "MachineId": "saeco:FD01"
+      },
+      {
+        "MachineIp": "coffeemachineservice-saeco",
+        "Port": 5006,
+        "MachineName": "Delongi-2-test",
+        "MachineId": "delonghi:FD02"
+      },
+      {
+        "MachineIp": "coffeemachineservice-delonghi",
+        "Port": 5008,
+        "MachineName": "Delongi-3-test",
+        "MachineId": "delonghi:FD03"
+      }
+    ]
+  }
+}

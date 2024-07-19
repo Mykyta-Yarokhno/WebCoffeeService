@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  webcoffeeservice:
+    image: ${DOCKER_REGISTRY-}webcoffeeservice
+    build:
+      context: .
+      dockerfile: WebCoffeeService/Dockerfile
+
+  coffeemachineservice:
+    image: ${DOCKER_REGISTRY-}coffeemachineservice
+    build:
+      context: .
+      dockerfile: CoffeeMachineService/Dockerfile
+
+  coffeemachineservice-saeco:
+    image: ${DOCKER_REGISTRY-}coffeemachineservice
+    build:
+      context: .
+      dockerfile: CoffeeMachineService/Dockerfile
+
+  coffeemachineservice-delonghi:
+    image: ${DOCKER_REGISTRY-}coffeemachineservice
+    build:
+      context: .
+      dockerfile: CoffeeMachineService/Dockerfile
+
